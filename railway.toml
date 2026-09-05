@@ -1,0 +1,7 @@
+[build]
+builder = "NIXPACKS"
+
+[deploy]
+startCommand = "npx tsx bot/server.ts"
+healthcheckPath = "/health"
+restartPolicyType = "ON_FAILURE"
